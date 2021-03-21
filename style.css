@@ -102,6 +102,15 @@ input, select {
 }
 
 /*---------------------------------------------------------------------------------------*/
+@font-face {
+    src: url(font/Andes.ttf);
+    font-family: and;
+   }
+
+@font-face{
+    src: url(font/Codian.otf);
+    font-family:codian;
+}
 
 h1 {
     font-size: 60px;
@@ -109,6 +118,8 @@ h1 {
     margin: 0px;
     background-color: antiquewhite;
     text-align: center;
+    font-family:and;
+    letter-spacing:5px;
 }
 
 body {
@@ -125,4 +136,16 @@ h2 {
 
 p  {
     font-size: 30px;
+    text-indent:30px;
+    line-height:30px;
 }
+
+
+.link-1 {
+    font-family:codian;
+    font-size: 20px;
+    color:darkcyan;
+    font-style:italic;
+    font-weight:100;
+    text-decoration:none;
+    }
