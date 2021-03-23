@@ -164,3 +164,20 @@ p  {
     margin-left:auto;
     margin-right:auto;
 }
+
+.test-video{
+    position:relative;
+    padding-bottom:28%;
+    width:500px;
+    height:0px;
+}
+
+.test-video video{
+    position:absolute;
+    left:225px;
+    top:0px;
+}
+
+.ts-video {
+    width:100%;
+}
