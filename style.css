@@ -113,18 +113,10 @@ input, select {
 }
 
 h1 {
-    font-size: 60px;
-    color: sandybrown;
-    margin: 0px;
-    background-color: antiquewhite;
-    text-align: center;
-    font-family:and;
-    letter-spacing:5px;
-}
+   
 
 body {
-    background-image: url(image/iu.jpg);
-    background-size:25% auto;
+    
 }
 
 .info {
