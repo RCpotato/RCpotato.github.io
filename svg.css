@@ -1,0 +1,115 @@
+/*-------svg--------*/
+
+.cls-1 {
+    fill: #6d2222;
+}
+
+.cls-2 {
+    fill: #681919;
+}
+
+.cls-3 {
+    fill: #2d2c22;
+}
+
+.cls-4 {
+    opacity: 0.99;
+}
+
+.cls-5 {
+    fill: #323031;
+}
+
+.cls-6 {
+    fill: #3d3e42;
+}
+
+#mider_line {
+    animation: mider-line 2s forwards;
+    transform-origin: center;
+}
+
+#left_cube {
+    animation: left-cube 3s forwards;
+    animation-delay: 2s;
+}
+
+#right_cube {
+    animation: right-cube 3s forwards;
+    animation-delay: 2.8s;
+}
+
+#creator {
+    animation: creator-herng 1s forwards;
+    animation-delay: 3.8s;
+}
+
+#nine_time {
+    animation: starup-yellow-growing 2s alternate infinite ;
+    animation-delay:4s;
+    
+}
+
+@keyframes mider-line {
+    0% {
+        transform: scaleY(0%)
+    }
+
+    50% {
+        transform: scaleY(100%)
+    }
+
+    100% {
+        transform: scaleY(100%) rotate(25deg)
+    }
+}
+
+@keyframes left-cube {
+    from {
+        transform: translateX(0%)
+    }
+
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes right-cube {
+    from {
+        transform: translateX(0%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes creator-herng {
+    0% {
+        transform: translateY(0%)
+    }
+
+    100% {
+        transform: translateY(15%)
+    }
+}
+
+@keyframes starup-yellow-growing{
+     0% {
+        filter: 
+        drop-shadow(0px 0px 0px #FFFFE7) 
+        drop-shadow(0px 0px 0px #FFFCD8) 
+        drop-shadow(0px 0px 0px #FFF9C9) 
+        drop-shadow(0px 0px 0px #FFF7BA) 
+        drop-shadow(0px 0px 0px #FFF4AB)
+        }
+    
+    100%{
+        filter: 
+        drop-shadow(0px 0px 2px #FFFFE7) 
+        drop-shadow(0px 0px 1.5px #FFFCD8) 
+        drop-shadow(0px 0px 1px #FFF9C9) 
+        drop-shadow(0px 0px 0.5px #FFF7BA) 
+        drop-shadow(0px 0px 0.25px #FFF4AB)
+        }
+    }
