@@ -21,7 +21,7 @@
 }
 
 .cls-6 {
-    fill: #3d3e42;
+    fill: #230500;
 }
 
 #mider_line {
@@ -65,10 +65,6 @@
     animation-delay:4s;
 }
 
-#nimama {
-    animation:fade-in 10s initial;
-}
-
 .enter_button {
     font-family: Andes;
     font-weight: bolder;
@@ -84,7 +80,7 @@
 }
 
     .enter_button:hover {
-        color: #3D3E42;
+        color: #230500;
         background: #2BB8BA;
         box-shadow: 0 0 10px #55CACB,0 0 20px #55CACB,0 0 40px #55CACB;
         transition-delay:1s;
