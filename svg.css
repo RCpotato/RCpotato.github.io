@@ -47,12 +47,21 @@
 
 #_5s3 {
     animation: red-growing 2s alternate infinite ;
-    animation-delay:4.25s;
-    
+    animation-delay:6.25s;
+}
+
+#_5s3_back{
+    animation: setup-red 1.1s ease;
+    animation-delay:5.25s;
 }
 
 #nine_time {
     animation: yellow-growing 2s alternate infinite ;
+    animation-delay:5s;
+}
+
+#nine_time_back{
+    animation:setup-yellow 1s ease;
     animation-delay:4s;
 }
 
@@ -170,11 +179,24 @@
         }
 }
 
+@keyframes setup-yellow{
+    0%{
+        filter: none
+    }
+    100%{
+        filter:
+        drop-shadow(0px 0px 1px #FFFFE7) 
+        drop-shadow(0px 0px 0px #FFFCD8) 
+        drop-shadow(0px 0px 0px #FFF9C9) 
+        drop-shadow(0px 0px 0px #FFF7BA) 
+        drop-shadow(0px 0px 0px #FFF4AB)
+    }
+}
 
 @keyframes yellow-growing{
      0% {
         filter: 
-        drop-shadow(0px 0px 0.7px #FFFFE7) 
+        drop-shadow(0px 0px 1px #FFFFE7) 
         drop-shadow(0px 0px 0px #FFFCD8) 
         drop-shadow(0px 0px 0px #FFF9C9) 
         drop-shadow(0px 0px 0px #FFF7BA) 
@@ -190,6 +212,20 @@
         drop-shadow(0px 0px 0.25px #FFF4AB)
         }
     }
+
+@keyframes setup-red{
+    0%{
+        filter:none
+    }
+    100%{
+        filter: 
+        drop-shadow(0px 0px 0.7px #FFCBCB) 
+        drop-shadow(0px 0px 0px #FFAEAE) 
+        drop-shadow(0px 0px 0px #FF9090) 
+        drop-shadow(0px 0px 0px #FF7373) 
+        drop-shadow(0px 0px 0px #FF5555)
+    }
+}
 
 @keyframes red-growing{
      0% {
