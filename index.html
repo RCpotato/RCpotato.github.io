@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="svg.css"/>
     <link rel="shortcut icon" type="image/svg" href="image/icon.svg" />
+    <script>
+        var select = new Audio();
+        select.src = "sound/select.mp3"
+    </script>
 </head>
 <body>
     <p><br></p>
@@ -83,7 +87,7 @@
     </div>
     <p><br></p>
     <div class="fade_in">
-    <a class="enter_button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+    <a class="enter_button" onmousedown="select.play()" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" >
         <span></span>
         <span></span>
         <span></span>

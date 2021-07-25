@@ -1,3 +1,7 @@
+@font-face {
+    src: url(font/Andes.ttf);
+    font-family: andes;
+}
 /*-------svg--------*/
 
 .cls-1 {
@@ -66,7 +70,7 @@
 }
 
 .enter_button {
-    font-family: Andes;
+    font-family: andes;
     font-weight: bolder;
     position: relative;
     display: inline-block;
