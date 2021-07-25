@@ -65,6 +65,101 @@
     animation-delay:4s;
 }
 
+#nimama {
+    animation:fade-in 10s initial;
+}
+
+.enter_button {
+    font-family: Andes;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #00A6A9;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+    .enter_button:hover {
+        color: #3D3E42;
+        background: #2BB8BA;
+        box-shadow: 0 0 10px #55CACB,0 0 20px #55CACB,0 0 40px #55CACB;
+        transition-delay:1s;
+    }
+
+.enter_button span{
+    position:absolute;
+    display:block;
+}
+    .enter_button span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,#2BB8BA);
+    }
+    .enter_button:hover span:nth-child(1){
+        left:100%;
+        transition:1s;
+    }
+
+    .enter_button span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,#2BB8BA);
+    }
+
+    .enter_button:hover span:nth-child(3) {
+        right: 100%;
+        transition: 1s;
+        transition-delay:0.5s;
+    }
+
+    .enter_button span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#2BB8BA);
+    }
+
+    .enter_button:hover span:nth-child(2) {
+        top:100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+    }
+
+    .enter_button span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,#2BB8BA);
+    }
+
+    .enter_button:hover span:nth-child(4) {
+        bottom:100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+    }
+
+@keyframes fade-in{
+    0%{
+        opacity:0.0;
+    }
+    78%{
+        opacity:0.0;
+    }
+    100%{
+        opacity:1.0;
+    }
+}
+
 @keyframes mider-line {
     0% {
         transform: scaleY(0%)
@@ -246,3 +341,5 @@
         drop-shadow(0px 0px 0.25px #FF5555)
         }
     }
+
+
