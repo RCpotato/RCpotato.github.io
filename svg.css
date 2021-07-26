@@ -74,11 +74,11 @@
     font-weight: bolder;
     position: relative;
     display: inline-block;
-    padding: 15px 30px;
+    padding: 38px 75px;
     color: #00A6A9;
     letter-spacing: 4px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 60px;
     overflow: hidden;
     transition: 0.2s;
 }
@@ -86,8 +86,7 @@
     .enter_button:hover {
         color: #071E26;
         background: #2BB8BA;
-        box-shadow: 0 0 10px #55CACB,0 0 20px #55CACB,0 0 40px #55CACB;
-        transition-delay:1s;
+        box-shadow: 0 0 25px #55CACB,0 0 50px #55CACB,0 0 100px #55CACB;
     }
 
 .enter_button span{
@@ -343,4 +342,85 @@
         }
     }
 
+@media only screen and (min-width : 1000px){
+    .enter_button {
+        font-family: andes;
+        font-weight: bolder;
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: #00A6A9;
+        letter-spacing: 4px;
+        text-decoration: none;
+        font-size: 24px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
 
+        .enter_button:hover {
+            color: #071E26;
+            background: #2BB8BA;
+            box-shadow: 0 0 10px #55CACB,0 0 20px #55CACB,0 0 40px #55CACB;
+            transition-delay: 1s;
+        }
+
+        .enter_button span {
+            position: absolute;
+            display: block;
+        }
+
+            .enter_button span:nth-child(1) {
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg,transparent,#2BB8BA);
+            }
+
+        .enter_button:hover span:nth-child(1) {
+            left: 100%;
+            transition: 1s;
+        }
+
+        .enter_button span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg,transparent,#2BB8BA);
+        }
+
+        .enter_button:hover span:nth-child(3) {
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+
+        .enter_button span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg,transparent,#2BB8BA);
+        }
+
+        .enter_button:hover span:nth-child(2) {
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+        }
+
+        .enter_button span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg,transparent,#2BB8BA);
+        }
+
+        .enter_button:hover span:nth-child(4) {
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+        }  
+}
